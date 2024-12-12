@@ -5,8 +5,8 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002256940690"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001980994910"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002106690102"))
 if FORCE_SUB_CHANNEL > FORCE_SUB_CHANNEL2:
     temp = FORCE_SUB_CHANNEL2 
     FORCE_SUB_CHANNEL2 = FORCE_SUB_CHANNEL
@@ -19,29 +19,29 @@ BOT_STATS_TEXT = os.environ.get("BOTS_STATS_TEXT","<b>BOT UPTIME</b>\n{uptime}")
 USER_REPLY_TEXT = os.environ.get("USER_REPLY_TEXT", "ʙʀᴜʜ ᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ sᴇɴᴘᴀɪ!!")
 
 #your bot token here from https://telegram.me/BotFather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7429276554:AAEk_n5FsligsrJ50QjFPA1PHMFLqo0eEwM") 
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "") 
 
 #your api id from https://my.telegram.org/apps
-APP_ID = int(os.environ.get("APP_ID", "21165589"))
+APP_ID = int(os.environ.get("APP_ID", "24955235"))
 
 #your api hash from https://my.telegram.org/apps
-API_HASH = os.environ.get("API_HASH", "8cc762f4873e84a7cf0cbfd66a07244b")
+API_HASH = os.environ.get("API_HASH", "f317b3f7bbe390346d8b46868cff0de8")
 
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002149484754"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002489448598"))
 
 #your database channel link
-CHANNEL_LINK = os.environ.get("CHANNEL_LINK", "https://t.me/+ddfydq6pKYtmNjU9")
+CHANNEL_LINK = os.environ.get("CHANNEL_LINK", "https://t.me/+V7taUse5B4FkY2Q0")
 
-VERIFY_LOG_ID = int(os.environ.get("VERIFY_LOG_ID", "-1002149484754"))
-LOG_ID = int(os.environ.get("LOG_ID", "-1002133701521"))
+VERIFY_LOG_ID = int(os.environ.get("VERIFY_LOG_ID", "-1002489448598"))
+LOG_ID = int(os.environ.get("LOG_ID", "-1002489448598"))
 
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
-OWNER_ID = int(os.environ.get("OWNER_ID", "2048030675"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7094616922"))
 
 #port set to default 8080
 PORT = os.environ.get("PORT", "8081")
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://aeoni:neon@aeoni.vkrl4.mongodb.net/?retryWrites=true&w=majority&appName=aeoni")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://rohitplayer87089:rohit870@cluster0.4wt927p.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DB_NAME", "gts")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "160"))
 START_MSG = os.environ.get("START_MESSAGE", 
@@ -52,6 +52,8 @@ START_MSG = os.environ.get("START_MESSAGE",
 <b>ɪ ᴄᴀɴ ᴅᴏᴡɴʟᴏᴀᴅ📥 ʏᴏᴜʀ ᴠɪᴅᴇᴏs, ɪᴍᴀɢᴇs, ᴅᴏᴄᴜᴍᴇɴᴛs ғʀᴏᴍ ᴛᴇʀᴀʙᴏx.ᴄᴏᴍ ᴡɪᴛʜ ᴀ ᴍᴀxɪᴍᴜᴍ sᴘᴇᴇᴅ⚡️</b>
 
 <b>ᴊᴜsᴛ sᴇɴᴅ ʏᴏᴜʀ ʟɪɴᴋs</b>
+
+<b>Made By @Xaltrix ❤️</b>
 
 <i>ᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅs </i>
     - /help
@@ -74,38 +76,38 @@ KEYWORDS = {
 }
 
 PAYMENT_LOGS = int(environ.get('PAYMENT_LOGS', '00000'))
-USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "FALSE") == "TRUE" else False 
+USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else False 
 
 # only shareus service known rightnow rest you can test on your own
-SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "onepageyam.com")
+SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "rglinks.com")
 
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "")
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "ebc6952165f90b393ed2d4d8d4df30ecf58c9172")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "cedfe548e9b4ac8d706ea4e23b86e13a1eaaaa9c")
 # 24hr = 86400
 # 12hr = 43200
-VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', "21600")) # Add time in seconds
+VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', "57600")) # Add time in seconds
 #Tutorial video for the user of your shortner on how to download.
-TUT_VID = os.environ.get("TUT_VID", "https://t.me/c/2242571831/14")
+TUT_VID = os.environ.get("TUT_VID", "https://t.me/TutorialsNG/5")
 #Payment to remove the token system
 #put TRUE if you want this feature
-USE_PAYMENT = True if (os.environ.get("USE_PAYMENT", "FALSE") == "FALSE") & (USE_SHORTLINK) else False
+USE_PAYMENT = True if (os.environ.get("USE_PAYMENT", "TRUE") == "FALSE") & (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("UPI_ID", "")
+UPI_ID = os.environ.get("UPI_ID", "kunaljaisinghpur@axl")
 #UPI QR CODE IMAGE
-UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "")
+UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://envs.sh/4X6.jpg")
 #SCREENSHOT URL of ADMIN for verification of payments
-SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", "")
+SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", "https://envs.sh/4X6.jpg")
 #Time and its price
 #7 Days
-PRICE1 = os.environ.get("PRICE1", "30 rs")
+PRICE1 = os.environ.get("PRICE1", "10 rs")
 #1 Month
-PRICE2 = os.environ.get("PRICE2", "110 rs")
+PRICE2 = os.environ.get("PRICE2", "29 rs")
 #3 Month
-PRICE3 = os.environ.get("PRICE3", "299 rs")
+PRICE3 = os.environ.get("PRICE3", "79 rs")
 #6 Month
-PRICE4 = os.environ.get("PRICE4", "550 rs")
+PRICE4 = os.environ.get("PRICE4", "149 rs")
 #1 Year
-PRICE5 = os.environ.get("PRICE5", "999 rs")
+PRICE5 = os.environ.get("PRICE5", "279 rs")
 
 #force message for joining the channel
 FORCE_MSG = os.environ.get("FORCE_MSG", "<b>Hello {first}</b>\n \n<b>You need to join my channels to use me</b>\n\n<b>Kindly please join the below channels</b>")
@@ -113,7 +115,7 @@ FORCE_MSG = os.environ.get("FORCE_MSG", "<b>Hello {first}</b>\n \n<b>You need to
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 #protected content so that no files can be sent from the bot to anyone. recommended False
 # TRUE for yes FALSE if no
-PROTECT_CONTENT = True if os.environ.get("PROTECT_CONTENT", "True") == "TRUE" else False
+PROTECT_CONTENT = True if os.environ.get("PROTECT_CONTENT", "False") == "TRUE" else False
 #used if you dont need buttons on database channel.
 # True for yes False if no
 DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE") == "TRUE" else False
